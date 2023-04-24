@@ -1,0 +1,187 @@
+CROSS JOIN
+SELECT * FROM Products CROSS JOIN Menu;
++------------+----------------+----------+----------+------+---------------+----------------+--------+---------+------------------------+-----------+------------+
+| product_id | Product_name   | Calories | Proteins | Fats | Carbohydrates | Category       | Weight | menu_id | Menu_name              | Menu_type | Variety    |
++------------+----------------+----------+----------+------+---------------+----------------+--------+---------+------------------------+-----------+------------+
+|          1 | Egg            |      155 |       13 |   11 |             1 | Dairy and Eggs |     50 |       1 | Omelette               | Breakfast | Standart   |
+|          1 | Egg            |      155 |       13 |   11 |             1 | Dairy and Eggs |     50 |       2 | Salmon Bowl            | Lunch     | Standart   |
+|          1 | Egg            |      155 |       13 |   11 |             1 | Dairy and Eggs |     50 |       3 | Grilled Chicken Salad  | Lunch     | Standart   |
+|          1 | Egg            |      155 |       13 |   11 |             1 | Dairy and Eggs |     50 |       4 | Vegetable Stir-fry     | Dinner    | Vegan      |
+|          1 | Egg            |      155 |       13 |   11 |             1 | Dairy and Eggs |     50 |       5 | Mediterranean Wrap     | Lunch     | Vegetarian |
+|          1 | Egg            |      155 |       13 |   11 |             1 | Dairy and Eggs |     50 |       6 | Greek Yogurt and Fruit | Breakfast | Vegetarian |
+|          2 | Salmon         |      206 |       22 |   13 |             0 | Seafood        |    100 |       1 | Omelette               | Breakfast | Standart   |
+|          2 | Salmon         |      206 |       22 |   13 |             0 | Seafood        |    100 |       2 | Salmon Bowl            | Lunch     | Standart   |
+|          2 | Salmon         |      206 |       22 |   13 |             0 | Seafood        |    100 |       3 | Grilled Chicken Salad  | Lunch     | Standart   |
+|          2 | Salmon         |      206 |       22 |   13 |             0 | Seafood        |    100 |       4 | Vegetable Stir-fry     | Dinner    | Vegan      |
+|          2 | Salmon         |      206 |       22 |   13 |             0 | Seafood        |    100 |       5 | Mediterranean Wrap     | Lunch     | Vegetarian |
+|          2 | Salmon         |      206 |       22 |   13 |             0 | Seafood        |    100 |       6 | Greek Yogurt and Fruit | Breakfast | Vegetarian |
+|          3 | Chicken Breast |      165 |       31 |    4 |             0 | Poultry        |    100 |       1 | Omelette               | Breakfast | Standart   |
+|          3 | Chicken Breast |      165 |       31 |    4 |             0 | Poultry        |    100 |       2 | Salmon Bowl            | Lunch     | Standart   |
+|          3 | Chicken Breast |      165 |       31 |    4 |             0 | Poultry        |    100 |       3 | Grilled Chicken Salad  | Lunch     | Standart   |
+|          3 | Chicken Breast |      165 |       31 |    4 |             0 | Poultry        |    100 |       4 | Vegetable Stir-fry     | Dinner    | Vegan      |
+|          3 | Chicken Breast |      165 |       31 |    4 |             0 | Poultry        |    100 |       5 | Mediterranean Wrap     | Lunch     | Vegetarian |
+|          3 | Chicken Breast |      165 |       31 |    4 |             0 | Poultry        |    100 |       6 | Greek Yogurt and Fruit | Breakfast | Vegetarian |
+|          4 | Broccoli       |       55 |        4 |    1 |            10 | Vegetables     |    100 |       1 | Omelette               | Breakfast | Standart   |
+|          4 | Broccoli       |       55 |        4 |    1 |            10 | Vegetables     |    100 |       2 | Salmon Bowl            | Lunch     | Standart   |
+|          4 | Broccoli       |       55 |        4 |    1 |            10 | Vegetables     |    100 |       3 | Grilled Chicken Salad  | Lunch     | Standart   |
+|          4 | Broccoli       |       55 |        4 |    1 |            10 | Vegetables     |    100 |       4 | Vegetable Stir-fry     | Dinner    | Vegan      |
+|          4 | Broccoli       |       55 |        4 |    1 |            10 | Vegetables     |    100 |       5 | Mediterranean Wrap     | Lunch     | Vegetarian |
+|          4 | Broccoli       |       55 |        4 |    1 |            10 | Vegetables     |    100 |       6 | Greek Yogurt and Fruit | Breakfast | Vegetarian |
+|          5 | Brown Rice     |      111 |        3 |    1 |            23 | Grains         |    100 |       1 | Omelette               | Breakfast | Standart   |
+|          5 | Brown Rice     |      111 |        3 |    1 |            23 | Grains         |    100 |       2 | Salmon Bowl            | Lunch     | Standart   |
+|          5 | Brown Rice     |      111 |        3 |    1 |            23 | Grains         |    100 |       3 | Grilled Chicken Salad  | Lunch     | Standart   |
+|          5 | Brown Rice     |      111 |        3 |    1 |            23 | Grains         |    100 |       4 | Vegetable Stir-fry     | Dinner    | Vegan      |
+|          5 | Brown Rice     |      111 |        3 |    1 |            23 | Grains         |    100 |       5 | Mediterranean Wrap     | Lunch     | Vegetarian |
+|          5 | Brown Rice     |      111 |        3 |    1 |            23 | Grains         |    100 |       6 | Greek Yogurt and Fruit | Breakfast | Vegetarian |
+|          6 | Spinach        |       23 |        3 |    0 |             4 | Vegetables     |    100 |       1 | Omelette               | Breakfast | Standart   |
+|          6 | Spinach        |       23 |        3 |    0 |             4 | Vegetables     |    100 |       2 | Salmon Bowl            | Lunch     | Standart   |
+|          6 | Spinach        |       23 |        3 |    0 |             4 | Vegetables     |    100 |       3 | Grilled Chicken Salad  | Lunch     | Standart   |
+|          6 | Spinach        |       23 |        3 |    0 |             4 | Vegetables     |    100 |       4 | Vegetable Stir-fry     | Dinner    | Vegan      |
+|          6 | Spinach        |       23 |        3 |    0 |             4 | Vegetables     |    100 |       5 | Mediterranean Wrap     | Lunch     | Vegetarian |
+|          6 | Spinach        |       23 |        3 |    0 |             4 | Vegetables     |    100 |       6 | Greek Yogurt and Fruit | Breakfast | Vegetarian |
+|          7 | Greek Yogurt   |      133 |       23 |    0 |             9 | Dairy and Eggs |    100 |       1 | Omelette               | Breakfast | Standart   |
+|          7 | Greek Yogurt   |      133 |       23 |    0 |             9 | Dairy and Eggs |    100 |       2 | Salmon Bowl            | Lunch     | Standart   |
+|          7 | Greek Yogurt   |      133 |       23 |    0 |             9 | Dairy and Eggs |    100 |       3 | Grilled Chicken Salad  | Lunch     | Standart   |
+|          7 | Greek Yogurt   |      133 |       23 |    0 |             9 | Dairy and Eggs |    100 |       4 | Vegetable Stir-fry     | Dinner    | Vegan      |
+|          7 | Greek Yogurt   |      133 |       23 |    0 |             9 | Dairy and Eggs |    100 |       5 | Mediterranean Wrap     | Lunch     | Vegetarian |
+|          7 | Greek Yogurt   |      133 |       23 |    0 |             9 | Dairy and Eggs |    100 |       6 | Greek Yogurt and Fruit | Breakfast | Vegetarian |
+|          8 | Almonds        |      575 |       21 |   49 |            22 | Nuts and Seeds |    100 |       1 | Omelette               | Breakfast | Standart   |
+|          8 | Almonds        |      575 |       21 |   49 |            22 | Nuts and Seeds |    100 |       2 | Salmon Bowl            | Lunch     | Standart   |
+|          8 | Almonds        |      575 |       21 |   49 |            22 | Nuts and Seeds |    100 |       3 | Grilled Chicken Salad  | Lunch     | Standart   |
+|          8 | Almonds        |      575 |       21 |   49 |            22 | Nuts and Seeds |    100 |       4 | Vegetable Stir-fry     | Dinner    | Vegan      |
+|          8 | Almonds        |      575 |       21 |   49 |            22 | Nuts and Seeds |    100 |       5 | Mediterranean Wrap     | Lunch     | Vegetarian |
+|          8 | Almonds        |      575 |       21 |   49 |            22 | Nuts and Seeds |    100 |       6 | Greek Yogurt and Fruit | Breakfast | Vegetarian |
+|          9 | Avocado        |      160 |        2 |   15 |             9 | Fruits         |    100 |       1 | Omelette               | Breakfast | Standart   |
+|          9 | Avocado        |      160 |        2 |   15 |             9 | Fruits         |    100 |       2 | Salmon Bowl            | Lunch     | Standart   |
+|          9 | Avocado        |      160 |        2 |   15 |             9 | Fruits         |    100 |       3 | Grilled Chicken Salad  | Lunch     | Standart   |
+|          9 | Avocado        |      160 |        2 |   15 |             9 | Fruits         |    100 |       4 | Vegetable Stir-fry     | Dinner    | Vegan      |
+|          9 | Avocado        |      160 |        2 |   15 |             9 | Fruits         |    100 |       5 | Mediterranean Wrap     | Lunch     | Vegetarian |
+|          9 | Avocado        |      160 |        2 |   15 |             9 | Fruits         |    100 |       6 | Greek Yogurt and Fruit | Breakfast | Vegetarian |
+|         10 | Quinoa         |      120 |        4 |    2 |            21 | Grains         |    100 |       1 | Omelette               | Breakfast | Standart   |
+|         10 | Quinoa         |      120 |        4 |    2 |            21 | Grains         |    100 |       2 | Salmon Bowl            | Lunch     | Standart   |
+|         10 | Quinoa         |      120 |        4 |    2 |            21 | Grains         |    100 |       3 | Grilled Chicken Salad  | Lunch     | Standart   |
+|         10 | Quinoa         |      120 |        4 |    2 |            21 | Grains         |    100 |       4 | Vegetable Stir-fry     | Dinner    | Vegan      |
+|         10 | Quinoa         |      120 |        4 |    2 |            21 | Grains         |    100 |       5 | Mediterranean Wrap     | Lunch     | Vegetarian |
+|         10 | Quinoa         |      120 |        4 |    2 |            21 | Grains         |    100 |       6 | Greek Yogurt and Fruit | Breakfast | Vegetarian |
++------------+----------------+----------+----------+------+---------------+----------------+--------+---------+------------------------+-----------+------------+
+60 rows in set (0.00 sec)
+Этот запрос вернет таблицу, состоящую из всех возможных комбинаций строк из таблиц Products и Menu. Количество строк в результирующей таблице будет равно произведению количества строк в каждой из исходных таблиц.
+
+INNER JOIN
+SELECT * FROM Products INNER JOIN Product_Menu ON Products.product_id = Product_Menu.product_id;
++------------+----------------+----------+----------+------+---------------+----------------+--------+-----------------+------------+---------+----------+
+| product_id | Product_name   | Calories | Proteins | Fats | Carbohydrates | Category       | Weight | product_menu_id | product_id | menu_id | quantity |
++------------+----------------+----------+----------+------+---------------+----------------+--------+-----------------+------------+---------+----------+
+|          1 | Egg            |      155 |       13 |   11 |             1 | Dairy and Eggs |     50 |               1 |          1 |       1 | 2        |
+|          4 | Broccoli       |       55 |        4 |    1 |            10 | Vegetables     |    100 |               2 |          4 |       3 | 1        |
+|          2 | Salmon         |      206 |       22 |   13 |             0 | Seafood        |    100 |               3 |          2 |       2 | 1        |
+|          3 | Chicken Breast |      165 |       31 |    4 |             0 | Poultry        |    100 |               4 |          3 |       3 | 1        |
+|          6 | Spinach        |       23 |        3 |    0 |             4 | Vegetables     |    100 |               5 |          6 |       4 | 1        |
+|          7 | Greek Yogurt   |      133 |       23 |    0 |             9 | Dairy and Eggs |    100 |               6 |          7 |       5 | 2        |
+|          5 | Brown Rice     |      111 |        3 |    1 |            23 | Grains         |    100 |               7 |          5 |       5 | 1        |
++------------+----------------+----------+----------+------+---------------+----------------+--------+-----------------+------------+---------+----------+
+7 rows in set (0.00 sec)
+Этот запрос вернет все строки, где product_id в таблице Products соответствует product_id в таблице Product_Menu, соединяя две таблицы на основе общего поля.
+
+LEFT JOIN
+SELECT Products.product_id, Products.Product_name, Products.Calories, Products.Proteins, Products.Fats, Products.Carbohydrates, Products.Category, Products.Weight, Product_Menu.quantity FROM Products LEFT JOIN Product_Menu ON Products.product_id = Product_Menu.product_id;
++------------+----------------+----------+----------+------+---------------+----------------+--------+----------+
+| product_id | Product_name   | Calories | Proteins | Fats | Carbohydrates | Category       | Weight | quantity |
++------------+----------------+----------+----------+------+---------------+----------------+--------+----------+
+|          1 | Egg            |      155 |       13 |   11 |             1 | Dairy and Eggs |     50 | 2        |
+|          2 | Salmon         |      206 |       22 |   13 |             0 | Seafood        |    100 | 1        |
+|          3 | Chicken Breast |      165 |       31 |    4 |             0 | Poultry        |    100 | 1        |
+|          4 | Broccoli       |       55 |        4 |    1 |            10 | Vegetables     |    100 | 1        |
+|          5 | Brown Rice     |      111 |        3 |    1 |            23 | Grains         |    100 | 1        |
+|          6 | Spinach        |       23 |        3 |    0 |             4 | Vegetables     |    100 | 1        |
+|          7 | Greek Yogurt   |      133 |       23 |    0 |             9 | Dairy and Eggs |    100 | 2        |
+|          8 | Almonds        |      575 |       21 |   49 |            22 | Nuts and Seeds |    100 | NULL     |
+|          9 | Avocado        |      160 |        2 |   15 |             9 | Fruits         |    100 | NULL     |
+|         10 | Quinoa         |      120 |        4 |    2 |            21 | Grains         |    100 | NULL     |
++------------+----------------+----------+----------+------+---------------+----------------+--------+----------+
+10 rows in set (0.00 sec)
+Этот запрос выберет все строки из таблицы Products и соответствующие строки из таблицы Product_Menu. Если соответствующей строки в таблице Product_Menu нет, то для этой строки возвращаются NULL значения для полей таблицы Product_Menu.
+
+SELECT Products.product_id, Products.Product_name, Products.Calories, Products.Proteins, Products.Fats, Products.Carbohydrates, Products.Category, Products.Weight, Product_Menu.quantity FROM Products LEFT JOIN Product_Menu ON Products.product_id = Product_Menu.product_id WHERE Product_Menu.product_id IS NULL;
++------------+--------------+----------+----------+------+---------------+----------------+--------+----------+
+| product_id | Product_name | Calories | Proteins | Fats | Carbohydrates | Category       | Weight | quantity |
++------------+--------------+----------+----------+------+---------------+----------------+--------+----------+
+|          8 | Almonds      |      575 |       21 |   49 |            22 | Nuts and Seeds |    100 | NULL     |
+|          9 | Avocado      |      160 |        2 |   15 |             9 | Fruits         |    100 | NULL     |
+|         10 | Quinoa       |      120 |        4 |    2 |            21 | Grains         |    100 | NULL     |
++------------+--------------+----------+----------+------+---------------+----------------+--------+----------+
+3 rows in set (0.00 sec)
+
+RIGHT JOIN
+SELECT * FROM Product_Menu RIGHT JOIN Products ON Product_Menu.product_id = Products.product_id;
++-----------------+------------+---------+----------+------------+----------------+----------+----------+------+---------------+----------------+--------+
+| product_menu_id | product_id | menu_id | quantity | product_id | Product_name   | Calories | Proteins | Fats | Carbohydrates | Category       | Weight |
++-----------------+------------+---------+----------+------------+----------------+----------+----------+------+---------------+----------------+--------+
+|               1 |          1 |       1 | 2        |          1 | Egg            |      155 |       13 |   11 |             1 | Dairy and Eggs |     50 |
+|               3 |          2 |       2 | 1        |          2 | Salmon         |      206 |       22 |   13 |             0 | Seafood        |    100 |
+|               4 |          3 |       3 | 1        |          3 | Chicken Breast |      165 |       31 |    4 |             0 | Poultry        |    100 |
+|               2 |          4 |       3 | 1        |          4 | Broccoli       |       55 |        4 |    1 |            10 | Vegetables     |    100 |
+|               7 |          5 |       5 | 1        |          5 | Brown Rice     |      111 |        3 |    1 |            23 | Grains         |    100 |
+|               5 |          6 |       4 | 1        |          6 | Spinach        |       23 |        3 |    0 |             4 | Vegetables     |    100 |
+|               6 |          7 |       5 | 2        |          7 | Greek Yogurt   |      133 |       23 |    0 |             9 | Dairy and Eggs |    100 |
+|            NULL |       NULL |    NULL | NULL     |          8 | Almonds        |      575 |       21 |   49 |            22 | Nuts and Seeds |    100 |
+|            NULL |       NULL |    NULL | NULL     |          9 | Avocado        |      160 |        2 |   15 |             9 | Fruits         |    100 |
+|            NULL |       NULL |    NULL | NULL     |         10 | Quinoa         |      120 |        4 |    2 |            21 | Grains         |    100 |
++-----------------+------------+---------+----------+------------+----------------+----------+----------+------+---------------+----------------+--------+
+10 rows in set (0.00 sec)
+Этот запрос вернет все записи из таблицы Product_Menu, включая записи, для которых нет соответствующих значений в таблице Products. В результате также будут возвращены все записи из таблицы Products, для которых нет соответствующих значений в таблице Product_Menu. Если в таблице Product_Menu не найдено соответствующих значений, будут возвращены NULL значения для соответствующих столбцов таблицы Products.
+
+SELECT * FROM Product_Menu RIGHT JOIN Products ON Product_Menu.product_id = Products.product_id WHERE Product_Menu.product_id IS NULL;
++-----------------+------------+---------+----------+------------+--------------+----------+----------+------+---------------+----------------+--------+
+| product_menu_id | product_id | menu_id | quantity | product_id | Product_name | Calories | Proteins | Fats | Carbohydrates | Category       | Weight |
++-----------------+------------+---------+----------+------------+--------------+----------+----------+------+---------------+----------------+--------+
+|            NULL |       NULL |    NULL | NULL     |          8 | Almonds      |      575 |       21 |   49 |            22 | Nuts and Seeds |    100 |
+|            NULL |       NULL |    NULL | NULL     |          9 | Avocado      |      160 |        2 |   15 |             9 | Fruits         |    100 |
+|            NULL |       NULL |    NULL | NULL     |         10 | Quinoa       |      120 |        4 |    2 |            21 | Grains         |    100 |
++-----------------+------------+---------+----------+------------+--------------+----------+----------+------+---------------+----------------+--------+
+3 rows in set (0.00 sec)
+
+FULL OUTER JOIN
+SELECT * FROM Products 
+LEFT JOIN Product_Menu ON Products.product_id = Product_Menu.product_id
+UNION
+SELECT * FROM Products
+RIGHT JOIN Product_Menu ON Products.product_id = Product_Menu.product_id
+WHERE Products.product_id IS NULL;
++------------+----------------+----------+----------+------+---------------+----------------+--------+-----------------+------------+---------+----------+
+| product_id | Product_name   | Calories | Proteins | Fats | Carbohydrates | Category       | Weight | product_menu_id | product_id | menu_id | quantity |
++------------+----------------+----------+----------+------+---------------+----------------+--------+-----------------+------------+---------+----------+
+|          1 | Egg            |      155 |       13 |   11 |             1 | Dairy and Eggs |     50 |               1 |          1 |       1 | 2        |
+|          2 | Salmon         |      206 |       22 |   13 |             0 | Seafood        |    100 |               3 |          2 |       2 | 1        |
+|          3 | Chicken Breast |      165 |       31 |    4 |             0 | Poultry        |    100 |               4 |          3 |       3 | 1        |
+|          4 | Broccoli       |       55 |        4 |    1 |            10 | Vegetables     |    100 |               2 |          4 |       3 | 1        |
+|          5 | Brown Rice     |      111 |        3 |    1 |            23 | Grains         |    100 |               7 |          5 |       5 | 1        |
+|          6 | Spinach        |       23 |        3 |    0 |             4 | Vegetables     |    100 |               5 |          6 |       4 | 1        |
+|          7 | Greek Yogurt   |      133 |       23 |    0 |             9 | Dairy and Eggs |    100 |               6 |          7 |       5 | 2        |
+|          8 | Almonds        |      575 |       21 |   49 |            22 | Nuts and Seeds |    100 |            NULL |       NULL |    NULL | NULL     |
+|          9 | Avocado        |      160 |        2 |   15 |             9 | Fruits         |    100 |            NULL |       NULL |    NULL | NULL     |
+|         10 | Quinoa         |      120 |        4 |    2 |            21 | Grains         |    100 |            NULL |       NULL |    NULL | NULL     |
++------------+----------------+----------+----------+------+---------------+----------------+--------+-----------------+------------+---------+----------+
+10 rows in set (0.00 sec)
+Первый SELECT выводит все записи из таблицы Products, а также соответствующие записи из таблицы Product_Menu. Второй SELECT выводит все записи из таблицы Product_Menu, которые не имеют соответствующих записей в таблице Products.
+
+SELF JOIN
+SELECT u1.User_name, u2.User_name FROM User u1 JOIN User u2 ON u1.user_id <> u2.user_id;
++-------------+-------------+
+| User_name   | User_name   |
++-------------+-------------+
+| Jane Doe    | John Smith  |
+| Bob Johnson | John Smith  |
+| John Smith  | Jane Doe    |
+| Bob Johnson | Jane Doe    |
+| John Smith  | Bob Johnson |
+| Jane Doe    | Bob Johnson |
++-------------+-------------+
+6 rows in set (0.00 sec)
+В этом запросе мы создаем две временные копии таблицы User - u1 и u2. Затем мы объединяем эти копии, используя условие, что u1.user_id не равен u2.user_id. Таким образом, мы получаем все возможные комбинации пользователей, и для каждой комбинации выводим имена обоих пользователей.
+
+
+
+
+
+
