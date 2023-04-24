@@ -1,0 +1,39 @@
+Получение всех ключевых объектов, отсортированных по некоторому полю в порядке убывания:
+SELECT * FROM Products ORDER BY product_id DESC;
++------------+----------------+----------+----------+------+---------------+----------------+--------+
+| product_id | Product_name   | Calories | Proteins | Fats | Carbohydrates | Category       | Weight |
++------------+----------------+----------+----------+------+---------------+----------------+--------+
+|         10 | Quinoa         |      120 |        4 |    2 |            21 | Grains         |    100 |
+|          9 | Avocado        |      160 |        2 |   15 |             9 | Fruits         |    100 |
+|          8 | Almonds        |      575 |       21 |   49 |            22 | Nuts and Seeds |    100 |
+|          7 | Greek Yogurt   |      133 |       23 |    0 |             9 | Dairy and Eggs |    100 |
+|          6 | Spinach        |       23 |        3 |    0 |             4 | Vegetables     |    100 |
+|          5 | Brown Rice     |      111 |        3 |    1 |            23 | Grains         |    100 |
+|          4 | Broccoli       |       55 |        4 |    1 |            10 | Vegetables     |    100 |
+|          3 | Chicken Breast |      165 |       31 |    4 |             0 | Poultry        |    100 |
+|          2 | Salmon         |      206 |       22 |   13 |             0 | Seafood        |    100 |
+|          1 | Egg            |      155 |       13 |   11 |             1 | Dairy and Eggs |     50 |
++------------+----------------+----------+----------+------+---------------+----------------+--------+
+10 rows in set (0.00 sec)
+
+Получение количества ключевых объектов, соответствующих некоторому критерию отсортированных по убыванию:
+SELECT COUNT(*) FROM User WHERE Gender='male' ORDER BY user_id DESC;
++----------+
+| COUNT(*) |
++----------+
+|        2 |
++----------+
+1 row in set (0.00 sec)
+
+Получение всех ключевых объектов со "значением 1" или значением 2 отсортированных по некоторому полю:
+SELECT * FROM Menu WHERE Menu_type = 'Breakfast' OR Menu_type = 'lunch' ORDER BY menu_id ASC;
++---------+------------------------+-----------+------------+
+| menu_id | Menu_name              | Menu_type | Variety    |
++---------+------------------------+-----------+------------+
+|       1 | Omelette               | Breakfast | Standart   |
+|       2 | Salmon Bowl            | Lunch     | Standart   |
+|       3 | Grilled Chicken Salad  | Lunch     | Standart   |
+|       5 | Mediterranean Wrap     | Lunch     | Vegetarian |
+|       6 | Greek Yogurt and Fruit | Breakfast | Vegetarian |
++---------+------------------------+-----------+------------+
+5 rows in set (0.00 sec)
